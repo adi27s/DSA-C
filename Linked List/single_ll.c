@@ -118,7 +118,7 @@ int main() {
     head_t *head = NULL;
     int x,index;
     while(1){
-        printf("Enter your choice:\n1. Create a new linked list\n2. Print a linked list (Enter name of the linked list)\n3. Add an element at the beginning of the linkedlist.\n4. Add an element at the end.\n5. Add an element at an index\n6. Delete the linkedlist\n");
+        printf("Enter your choice:\n1. Create a new linked list\n2. Print linked list\n3. Add an element at the beginning of the linkedlist.\n4. Add an element at the end.\n5. Add an element at an index\n6. Delete the linkedlist\n");
         scanf("%d",&x);
         switch(x){
             case 1: head=create_ll();
