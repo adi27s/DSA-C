@@ -1,10 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include <map>
 
+#include <bits/stdc++.h>
 /*
 1. Vectors
 2. Sets
+3. Map
 */
 
 //---------------- Vectors ----------------
@@ -38,14 +41,10 @@ set<int, greater<int>> a; // Init-2 (Descending Order)
 a.insert(4);    // Push
 
 for (itr = a.begin(); itr != a.end(); itr++) // Traverse-1
-{
     cout << *itr << " ";
-}
 
 for (auto i : a)       // Traverse-2
-{
     cout << i << ' ';
-}
 
 a.erase(50);    // Erase an element
 a.size();   // Returns size
@@ -53,3 +52,30 @@ a.size();   // Returns size
 a.find(number); // returns a.end() if number is not found in the set
 
 //-----------------------------------------
+
+//-------------Map----------------
+
+map<string, int> mp; // Init
+
+mp["one"] = 1; // Insertion
+
+map.size(); // Size
+
+for (auto itr = gquiz1.begin(); itr != gquiz1.end(); ++itr) // Traversal-1
+    cout << itr->first << itr->second;
+
+for(auto i : mp)            // Traversal-2
+    cout << i.first << i.second;
+
+// Erase
+map_name.erase(key);
+
+// Find
+if (mp.find(key1) != mp.end())
+{
+    cout << "Key '" << key1 << "' found with";
+    cout << " value: " << mp[key1] << endl;
+}
+
+//--------------------------------
+
