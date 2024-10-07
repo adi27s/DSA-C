@@ -9,4 +9,15 @@ bool hasDuplicate(vector<int> &nums)
     return nums.size() != a.size();
 }
 
-// Without STL
+// With sorting (best case)
+    unordered_set<int> s;
+        for(auto i: nums){
+            if (s.find(i) != s.end()){
+                return true;
+            }
+            else{
+                s.insert(i);
+            }
+        }
+        return false;
+    }
