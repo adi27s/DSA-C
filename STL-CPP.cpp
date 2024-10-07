@@ -50,4 +50,6 @@ for (auto i : a)       // Traverse-2
 a.erase(50);    // Erase an element
 a.size();   // Returns size
 
+a.find(number); // returns a.end() if number is not found in the set
+
 //-----------------------------------------
