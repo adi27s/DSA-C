@@ -31,7 +31,7 @@ g1.insert(g1.begin() + 3, 100); // 0-based indexing
 
 g1.erase(g1.begin()); // Remove an element at Pos
 g1.size();  // returns size
-
+sort(answer.begin(), answer.end());
 //-----------------------------------------
 
 //---------------- Sets ----------------
