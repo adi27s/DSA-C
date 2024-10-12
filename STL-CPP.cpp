@@ -8,6 +8,7 @@
 1. Vectors
 2. Sets
 3. Map
+4. 
 */
 
 //---------------- Vectors ----------------
@@ -31,11 +32,17 @@ g1.insert(g1.begin() + 3, 100); // 0-based indexing
 
 g1.erase(g1.begin()); // Remove an element at Pos
 g1.size();  // returns size
-sort(answer.begin(), answer.end());
+sort(answer.begin(), answer.end()); // sort
+
+vector<pair<int, int>> v;
+v.push_back({1, 2}) // insertion of pair
+v[i].first(); // cout first value of pair
+
 //-----------------------------------------
 
 //---------------- Sets ----------------
-set<int> a; // Init-1 (default - Ascending Order)
+
+set<int> a;           // Init-1 (default - Ascending Order)
 set<int, greater<int>> a; // Init-2 (Descending Order)
 
 a.insert(4);    // Push
